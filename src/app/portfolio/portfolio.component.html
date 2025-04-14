@@ -1,0 +1,44 @@
+<section class="bg-white">
+        
+            <div class="pt-5">
+        
+                <div class="text-center">
+                    <h2 class="text-uppercase fs-1 fw-bold">portfolio component</h2>
+                </div>
+        
+                <div class="d-flex justify-content-center align-items-center line">
+                    <div class="bg-black mx-3"></div>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="bg-black mx-3"></div>
+                </div>
+        
+            </div>
+        
+        
+        
+            <div class="container">
+                <div class="row g-5 py-4">
+                    @for (isImg of isImgs; track $index) {
+        
+                        <div  class="col-md-6 col-lg-4 cursor-pointer">
+                            <div (click)="isHidden = false ; modelImg = isImg" class="card position-relative rounded-3 overflow-hidden">
+                                <img [src]="isImg" alt="" class="w-100">
+                            
+                                <!-- <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus fa-6x text-white"></i>
+                                </div> -->
+        
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            
+            <div 
+            (click)="hideModel($event.target , eleImg)"
+            [class.d-none]="isHidden"
+            class="model__ position-fixed start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+                <img #eleImg [src]="modelImg" alt="" class="">
+            </div>
+        
+</section>

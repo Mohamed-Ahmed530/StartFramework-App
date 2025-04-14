@@ -1,0 +1,12 @@
+.nav {
+    transition: all 0.5s;
+    background-color: #2C3E50 !important;
+}
+
+.bg-active {
+    background-color: #1ABC9C;
+}
+
+.nav-link {
+    transition: unset !important;
+}

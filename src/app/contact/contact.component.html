@@ -1,0 +1,26 @@
+<section>
+<div class="pt-5">
+    <h2 class="text-uppercase fs-1 fw-bold text-center">conatct section</h2>
+    <div class="d-flex justify-content-center align-items-center line">
+        <div class="bg-black mx-3"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="bg-black mx-3"></div>
+    </div>
+</div>
+
+<form class="w-75 mx-auto py-4">
+            <label class="position-relative top-0 color" for="username" [class.__top]="!userName">UserName</label>
+            <input id="username" name="username" type="text" placeholder="UserName" [(ngModel)]="userName" class="form-control border-0 border-bottom py-3 position-relative">
+        
+            <label class="position-relative top-0 color" for="userage" [class.__top]="!userAge">UserAge</label>
+            <input id="userage" name="userage" type="number" placeholder="UserAge" [(ngModel)]="userAge" class="form-control border-0 border-bottom py-3 position-relative">
+        
+            <label class="position-relative top-0 color" for="useremail" [class.__top]="!userEmail">UserEmail</label>
+            <input id="useremail" name="useremail" type="email" placeholder="UserEmail" [(ngModel)]="userEmail" class="form-control border-0 border-bottom py-3 position-relative">
+        
+            <label class="position-relative top-0 color" for="userpassword" [class.__top]="!userPassword">UserPassword</label>
+            <input id="userpassword" name="userpassword" type="password" placeholder="UserPassword " [(ngModel)]="userPassword" class="form-control border-0 border-bottom py-3 position-relative">
+            
+            <button  class="btn mt-4 text-white bg-color" style="background-color: #1abc9c;">send Message</button>
+</form>
+</section>

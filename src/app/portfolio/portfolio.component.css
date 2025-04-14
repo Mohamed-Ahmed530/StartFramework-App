@@ -1,0 +1,21 @@
+section {
+    height: auto;
+    padding-top: 90px;
+}
+
+.line div {
+    height: 4px;
+    width: 80px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.model__ {
+    z-index: 9999;
+}
+
+.model__ img {
+    width: 600px;
+}

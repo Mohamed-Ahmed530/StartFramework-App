@@ -1,0 +1,26 @@
+section {
+    height: 100vh;
+    padding-top: 90px;
+    height: fit-content;
+}
+
+.line div {
+    height: 4px;
+    width: 80px;
+}
+
+
+
+label{
+    color: #1abc9c;
+    margin-bottom: 7px;
+    transition: 0.5s top;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+}
+
+.__top {
+    top: 40px !important;
+}

@@ -1,0 +1,9 @@
+section {
+    background-color: hsl(168, 76%, 42%);
+    height:100vh;
+}
+
+.line div {
+    height: 4px;
+    width: 80px;
+}
